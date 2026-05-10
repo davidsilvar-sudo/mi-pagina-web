@@ -1,15 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Espacio Diversamente</title>
+  <title>Fonoaudiología Infantil Santiago Centro | Espacio Diversamente</title>
+
+  <meta
+    name="description"
+    content="Espacio Diversamente: consulta terapéutica integral en Santiago Centro. Fonoaudiología infantil, terapia ocupacional y psicología para niños, niñas y adolescentes."
+  >
 
   <style>
-
     *{
       margin:0;
       padding:0;
@@ -18,114 +20,201 @@
 
     body{
       font-family:Arial, sans-serif;
-      background:#f8f6f1;
+      background:#fffaf3;
       color:#1f2937;
       line-height:1.6;
     }
 
     header{
-      background:linear-gradient(135deg,#16a34a,#22c55e);
-      color:white;
-      text-align:center;
-      padding:60px 20px;
+      background:linear-gradient(135deg,#fff7ed,#fef3c7);
+      padding:30px 20px 70px;
+    }
+
+    nav{
+      max-width:1200px;
+      margin:auto;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:20px;
+      flex-wrap:wrap;
     }
 
     .logo{
-      width:220px;
-      margin-bottom:20px;
-      border-radius:20px;
-    }
-
-    header h1{
-      font-size:48px;
-      margin-bottom:15px;
-    }
-
-    header p{
-      max-width:700px;
-      margin:auto;
-      font-size:20px;
-    }
-
-    .btn{
-      display:inline-block;
-      margin-top:30px;
-      background:white;
-      color:#16a34a;
-      padding:15px 28px;
-      border-radius:12px;
-      text-decoration:none;
-      font-weight:bold;
-      transition:0.3s;
-    }
-
-    .btn:hover{
-      transform:scale(1.05);
-    }
-
-    section{
-      max-width:1200px;
-      margin:auto;
-      padding:70px 20px;
-    }
-
-    h2{
-      text-align:center;
-      font-size:36px;
-      margin-bottom:40px;
-      color:#166534;
-    }
-
-    .banner{
-      width:100%;
-      border-radius:25px;
-      box-shadow:0 4px 20px rgba(0,0,0,0.15);
-    }
-
-    .services{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:25px;
-      margin-top:40px;
-    }
-
-    .card{
-      background:white;
-      padding:25px;
+      width:230px;
       border-radius:18px;
-      box-shadow:0 4px 15px rgba(0,0,0,0.08);
-      text-align:center;
-      transition:0.3s;
     }
 
-    .card:hover{
-      transform:translateY(-5px);
+    .nav-links{
+      display:flex;
+      gap:25px;
+      align-items:center;
+      flex-wrap:wrap;
     }
 
-    .card img{
-      width:100%;
-      border-radius:14px;
-      margin-bottom:15px;
+    .nav-links a{
+      text-decoration:none;
+      color:#1f2937;
+      font-weight:bold;
     }
 
-    .professional{
+    .whatsapp-top{
+      background:#25D366;
+      color:white!important;
+      padding:12px 20px;
+      border-radius:10px;
+    }
+
+    .hero{
+      max-width:1200px;
+      margin:50px auto 0;
       display:grid;
       grid-template-columns:1fr 1fr;
       gap:40px;
       align-items:center;
     }
 
-    .professional img{
-      width:100%;
-      border-radius:25px;
-      box-shadow:0 4px 20px rgba(0,0,0,0.15);
+    .hero h1{
+      font-size:48px;
+      color:#3b245f;
+      line-height:1.15;
+      margin-bottom:20px;
     }
 
-    .professional-text{
+    .hero h1 span{
+      color:#166534;
+    }
+
+    .hero p{
+      font-size:20px;
+      margin-bottom:30px;
+    }
+
+    .hero img{
+      width:100%;
+      border-radius:30px;
+      box-shadow:0 8px 25px rgba(0,0,0,0.15);
+    }
+
+    .btns{
+      display:flex;
+      gap:15px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:15px 26px;
+      border-radius:12px;
+      text-decoration:none;
+      font-weight:bold;
+      transition:.3s;
+    }
+
+    .btn:hover{
+      transform:scale(1.04);
+    }
+
+    .btn-wsp{
+      background:#25D366;
+      color:white;
+    }
+
+    .btn-mail{
       background:white;
-      padding:35px;
+      color:#7c3aed;
+      border:2px solid #7c3aed;
+    }
+
+    section{
+      max-width:1200px;
+      margin:auto;
+      padding:60px 20px;
+    }
+
+    h2{
+      text-align:center;
+      font-size:36px;
+      margin-bottom:35px;
+      color:#166534;
+    }
+
+    .areas{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:25px;
+    }
+
+    .area-card{
+      background:#fff7ed;
+      padding:30px;
+      border-radius:22px;
+      box-shadow:0 5px 18px rgba(0,0,0,0.08);
+      text-align:center;
+    }
+
+    .area-card h3{
+      color:#3b245f;
+      margin-bottom:15px;
+      font-size:24px;
+    }
+
+    .team{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:28px;
+    }
+
+    .professional-card{
+      background:white;
+      padding:25px;
+      border-radius:24px;
+      box-shadow:0 5px 20px rgba(0,0,0,0.10);
+    }
+
+    .professional-card img{
+      width:100%;
       border-radius:20px;
-      box-shadow:0 4px 20px rgba(0,0,0,0.08);
+      margin-bottom:18px;
+    }
+
+    .tag{
+      display:inline-block;
+      padding:6px 14px;
+      border-radius:20px;
+      color:white;
+      font-weight:bold;
+      font-size:13px;
+      margin-bottom:12px;
+    }
+
+    .fono{background:#74a856;}
+    .to{background:#ec6f91;}
+    .psico{background:#f59e0b;}
+
+    .professional-card h3{
+      font-size:24px;
+      color:#111827;
+      margin-bottom:12px;
+    }
+
+    .professional-card p{
+      margin-bottom:14px;
+    }
+
+    ul{
+      padding-left:22px;
+      margin-top:12px;
+    }
+
+    li{
+      margin-bottom:7px;
+    }
+
+    .promo img{
+      width:100%;
+      border-radius:25px;
+      box-shadow:0 6px 25px rgba(0,0,0,0.14);
     }
 
     .gallery{
@@ -136,271 +225,294 @@
 
     .gallery img{
       width:100%;
-      border-radius:20px;
-      box-shadow:0 4px 20px rgba(0,0,0,0.12);
+      border-radius:22px;
+      box-shadow:0 5px 20px rgba(0,0,0,0.12);
     }
 
     .contact{
-      background:#166534;
-      color:white;
-      text-align:center;
-      padding:60px 20px;
+      background:#fef3c7;
       border-radius:25px;
+      padding:40px;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:30px;
+      align-items:center;
     }
 
     .contact h2{
-      color:white;
+      text-align:left;
+      color:#3b245f;
+      margin-bottom:20px;
     }
 
     .contact p{
-      margin-bottom:15px;
       font-size:18px;
+      margin-bottom:12px;
     }
 
-    .whatsapp{
-      display:inline-block;
-      margin-top:20px;
-      background:#25D366;
-      color:white;
-      padding:18px 32px;
-      border-radius:14px;
-      text-decoration:none;
-      font-weight:bold;
-      font-size:18px;
-      transition:0.3s;
-    }
-
-    .whatsapp:hover{
-      transform:scale(1.05);
+    .contact-box{
+      background:white;
+      padding:28px;
+      border-radius:20px;
+      box-shadow:0 4px 16px rgba(0,0,0,0.08);
     }
 
     footer{
-      background:#111827;
+      background:#7c3aed;
       color:white;
       text-align:center;
       padding:25px;
-      margin-top:50px;
+      margin-top:40px;
     }
 
     @media(max-width:900px){
-
-      .professional{
+      .hero{
         grid-template-columns:1fr;
       }
 
-      header h1{
+      .hero h1{
         font-size:38px;
       }
 
-    }
+      .contact{
+        grid-template-columns:1fr;
+      }
 
+      nav{
+        justify-content:center;
+        text-align:center;
+      }
+
+      .nav-links{
+        justify-content:center;
+      }
+    }
   </style>
 </head>
 
 <body>
 
-  <header>
+  <header id="inicio">
 
-    <img
-      src="img/logo.jpeg"
-      alt="Logo Espacio Diversamente"
-      class="logo"
-    >
+    <nav>
+      <img src="img/logo.jpeg" alt="Logo Espacio Diversamente" class="logo">
 
-    <h1>Espacio Diversamente</h1>
+      <div class="nav-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#profesionales">Profesionales</a>
+        <a href="#promociones">Promociones</a>
+        <a href="#contacto">Contacto</a>
+        <a class="whatsapp-top" href="https://wa.me/56941169835" target="_blank">WhatsApp</a>
+      </div>
+    </nav>
 
-    <p>
-      Atención infantojuvenil interdisciplinaria en fonoaudiología,
-      terapia ocupacional y psicología.
-    </p>
+    <div class="hero">
+      <div>
+        <h1>
+          Acompañamos el desarrollo de tus <span>hijos e hijas</span>
+        </h1>
 
-    <a
-      href="https://wa.me/56954221399"
-      target="_blank"
-      class="btn"
-    >
-      Agenda una evaluación
-    </a>
+        <p>
+          Atención interdisciplinaria en fonoaudiología infantil, terapia ocupacional
+          y psicología para niños, niñas y adolescentes en Santiago Centro.
+        </p>
+
+        <div class="btns">
+          <a class="btn btn-wsp" href="https://wa.me/56941169835" target="_blank">
+            Agenda por WhatsApp
+          </a>
+
+          <a class="btn btn-mail" href="mailto:consulta.diversamente@gmail.com">
+            Escríbenos
+          </a>
+        </div>
+      </div>
+
+      <img src="img/consulta-1.jpeg" alt="Consulta infantil Espacio Diversamente">
+    </div>
 
   </header>
 
-  <section>
+  <section id="servicios">
+    <h2>Nuestras Áreas de Atención</h2>
 
-    <img
-      src="img/banner.jpeg"
-      alt="Banner Espacio Diversamente"
-      class="banner"
-    >
+    <div class="areas">
 
-  </section>
-
-  <section>
-
-    <h2>Nuestros Servicios</h2>
-
-    <div class="services">
-
-      <div class="card">
-
-        <img
-          src="img/servicios.jpeg"
-          alt="Servicios"
-        >
-
-        <h3>Atención Interdisciplinaria</h3>
-
+      <div class="area-card">
+        <h3>Fonoaudiología Infantil</h3>
         <p>
-          Trabajo integral orientado al desarrollo comunicativo,
-          emocional y ocupacional.
+          Apoyamos el desarrollo del lenguaje, habla y comunicación,
+          favoreciendo una mejor expresión, comprensión e interacción social.
         </p>
-
       </div>
 
-      <div class="card">
-
-        <img
-          src="img/consulta-1.jpeg"
-          alt="Sala terapéutica"
-        >
-
-        <h3>Espacios Terapéuticos</h3>
-
+      <div class="area-card">
+        <h3>Terapia Ocupacional</h3>
         <p>
-          Ambiente seguro, acogedor y adaptado para niños,
-          niñas y adolescentes.
+          Promovemos autonomía, integración sensorial, regulación emocional
+          y habilidades necesarias para la vida diaria.
         </p>
-
       </div>
 
-      <div class="card">
-
-        <img
-          src="img/consulta-2.jpeg"
-          alt="Consulta terapéutica"
-        >
-
-        <h3>Atención Personalizada</h3>
-
+      <div class="area-card">
+        <h3>Psicología Infantil</h3>
         <p>
-          Evaluaciones y orientación adaptadas a las necesidades
-          individuales de cada familia.
+          Acompañamos el bienestar emocional, conductual y socioemocional,
+          entregando herramientas para niños, niñas y sus familias.
         </p>
-
       </div>
 
     </div>
-
   </section>
 
-  <section>
+  <section id="profesionales">
+    <h2>Nuestro Equipo de Profesionales</h2>
 
-    <h2>Profesional</h2>
+    <div class="team">
 
-    <div class="professional">
+      <div class="professional-card">
+        <img src="img/profesional.jpeg" alt="Constanza Silva Rodríguez Fonoaudióloga">
 
-      <img
-        src="img/profesional.jpeg"
-        alt="Fonoaudióloga"
-      >
+        <span class="tag fono">Fonoaudióloga</span>
 
-      <div class="professional-text">
-
-        <h3 style="font-size:32px;margin-bottom:20px;">
-          Constanza Silva Rodríguez
-        </h3>
+        <h3>Constanza Silva Rodríguez</h3>
 
         <p>
-          Fonoaudióloga con experiencia en:
+          La fonoaudiología infantil busca fortalecer el desarrollo del lenguaje,
+          la comunicación y los sonidos del habla. Su objetivo es que niños y niñas
+          puedan expresarse mejor, comprender su entorno y desenvolverse con mayor
+          seguridad en contextos familiares, escolares y sociales.
         </p>
 
-        <br>
+        <p>
+          <strong>Beneficios:</strong> mejora la expresión oral, comprensión,
+          confianza comunicativa y participación social.
+        </p>
 
-        <ul style="padding-left:20px;">
-
+        <ul>
           <li>Estimulación temprana</li>
           <li>Trastornos del lenguaje</li>
           <li>Trastornos de los sonidos del habla</li>
           <li>Necesidades educativas</li>
           <li>Comunicación y habilidades sociales</li>
-
         </ul>
+      </div>
 
-        <br>
+      <div class="professional-card">
+        <img src="img/profesional-2.jpeg" alt="Cinthya Quiroz Paredes Terapeuta Ocupacional">
 
-        <a
-          href="https://wa.me/56954221399"
-          target="_blank"
-          class="whatsapp"
-        >
-          Agendar atención
-        </a>
+        <span class="tag to">Terapeuta Ocupacional</span>
 
+        <h3>Cinthya Quiroz Paredes</h3>
+
+        <p>
+          La terapia ocupacional infantil busca favorecer la autonomía,
+          integración sensorial, regulación emocional y participación del niño
+          o niña en actividades cotidianas, escolares y sociales.
+        </p>
+
+        <p>
+          <strong>Beneficios:</strong> mayor independencia, mejor adaptación
+          sensorial, regulación emocional y desarrollo de habilidades funcionales
+          para la vida diaria.
+        </p>
+
+        <ul>
+          <li>Integración sensorial</li>
+          <li>Selectividad alimentaria</li>
+          <li>Regulación emocional</li>
+          <li>Condición del Espectro Autista</li>
+          <li>TDAH</li>
+          <li>Habilidades para la vida diaria</li>
+          <li>Certificación oficial ADOS-2</li>
+        </ul>
+      </div>
+
+      <div class="professional-card">
+        <img src="img/profesional-3.jpeg" alt="Leslie Villegas Westermeier Psicóloga">
+
+        <span class="tag psico">Psicóloga</span>
+
+        <h3>Leslie Villegas Westermeier</h3>
+
+        <p>
+          La psicología infantil busca acompañar el bienestar emocional,
+          conductual y socioemocional de niños, niñas y adolescentes, entregando
+          estrategias para comprender y afrontar sus desafíos cotidianos.
+        </p>
+
+        <p>
+          <strong>Beneficios:</strong> fortalece la autoestima, regulación emocional,
+          habilidades sociales, adaptación escolar y vínculo familiar.
+        </p>
+
+        <ul>
+          <li>Psicodiagnóstico de baja y mediana complejidad</li>
+          <li>Parentalidad positiva</li>
+          <li>Estimulación cognitiva</li>
+          <li>Habilidades socioemocionales</li>
+          <li>Aplicación de batería WISC V</li>
+        </ul>
       </div>
 
     </div>
+  </section>
 
+  <section id="promociones" class="promo">
+    <h2>Promociones</h2>
+
+    <img src="img/promocion.jpeg" alt="Promoción Fonoaudiología Infantil Pack de sesiones">
   </section>
 
   <section>
-
     <h2>Nuestro Espacio</h2>
 
     <div class="gallery">
-
-      <img
-        src="img/consulta-1.jpeg"
-        alt="Consulta infantil"
-      >
-
-      <img
-        src="img/consulta-2.jpeg"
-        alt="Consulta terapéutica"
-      >
-
+      <img src="img/consulta-1.jpeg" alt="Sala de atención infantil">
+      <img src="img/consulta-2.jpeg" alt="Consulta terapéutica infantil">
+      <img src="img/banner.jpeg" alt="Espacio acogedor y seguro">
     </div>
-
   </section>
 
-  <section>
-
+  <section id="contacto">
     <div class="contact">
 
-      <h2>Contáctanos</h2>
+      <div>
+        <h2>Contáctanos</h2>
 
-      <p>
-        📍 Miraflores 249 · Santiago Centro
-      </p>
+        <p>📱 WhatsApp: +56 9 4116 9835</p>
+        <p>📧 consulta.diversamente@gmail.com</p>
+        <p>📍 Miraflores 249 · Santiago Centro</p>
+        <p>🚇 Cercano a Metro Bellas Artes</p>
+        <p>📸 Instagram: @espacio_diversamente</p>
+      </div>
 
-      <p>
-        🚇 Cercano a Metro Bellas Artes
-      </p>
+      <div class="contact-box">
+        <h3>Agenda una evaluación</h3>
 
-      <p>
-        📸 Instagram: @espacio_diversamente
-      </p>
+        <p>
+          Escríbenos para consultar disponibilidad, valores,
+          modalidad de atención y horarios vigentes.
+        </p>
 
-      <p>
-        📱 WhatsApp: +56 9 5422 1399
-      </p>
+        <div class="btns">
+          <a class="btn btn-wsp" href="https://wa.me/56941169835" target="_blank">
+            Hablar por WhatsApp
+          </a>
 
-      <a
-        href="https://wa.me/56954221399"
-        target="_blank"
-        class="whatsapp"
-      >
-        Hablar por WhatsApp
-      </a>
+          <a class="btn btn-mail" href="mailto:consulta.diversamente@gmail.com">
+            Enviar correo
+          </a>
+        </div>
+      </div>
 
     </div>
-
   </section>
 
   <footer>
-
     © 2026 Espacio Diversamente · Consulta Terapéutica Integral
-
   </footer>
 
 </body>
 </html>
-```
