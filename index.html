@@ -1,88 +1,325 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fonoaudiología Pediátrica</title>
 
   <style>
-    body{
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
       font-family: Arial, sans-serif;
-      margin:0;
-      padding:0;
-      background:#f5f5f5;
-      text-align:center;
+      color: #1f2937;
+      background: #f8fafc;
+      line-height: 1.6;
     }
 
-    header{
-      background:#2e8b57;
-      color:white;
-      padding:40px;
+    header {
+      background: linear-gradient(135deg, #2e8b57, #3fbf7f);
+      color: white;
+      padding: 70px 20px;
+      text-align: center;
     }
 
-    section{
-      padding:40px;
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
     }
 
-    .card{
-      background:white;
-      max-width:700px;
-      margin:auto;
-      padding:30px;
-      border-radius:12px;
-      box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    header p {
+      font-size: 20px;
+      max-width: 700px;
+      margin: auto;
     }
 
-    .btn{
-      display:inline-block;
-      margin-top:20px;
-      background:#2e8b57;
-      color:white;
-      padding:15px 25px;
-      border-radius:8px;
-      text-decoration:none;
-      font-weight:bold;
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      background: white;
+      color: #2e8b57;
+      padding: 15px 28px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
     }
 
-    footer{
-      margin-top:40px;
-      padding:20px;
-      background:#222;
-      color:white;
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 30px;
+      color: #14532d;
+    }
+
+    .intro {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+      font-size: 18px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+      margin-top: 35px;
+    }
+
+    .card {
+      background: white;
+      padding: 28px;
+      border-radius: 16px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      color: #166534;
+    }
+
+    .highlight {
+      background: #dcfce7;
+      border-radius: 18px;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .steps {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .step {
+      background: white;
+      padding: 22px;
+      border-left: 6px solid #2e8b57;
+      margin-bottom: 18px;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    }
+
+    .contact {
+      background: #14532d;
+      color: white;
+      text-align: center;
+      border-radius: 20px;
+      padding: 50px 20px;
+    }
+
+    .contact h2 {
+      color: white;
+    }
+
+    .whatsapp {
+      background: #25D366;
+      color: white;
+      padding: 16px 30px;
+      border-radius: 10px;
+      display: inline-block;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 25px;
+      transition: 0.3s;
+    }
+
+    .whatsapp:hover {
+      transform: scale(1.05);
+      background: #1ebe5d;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #111827;
+      color: white;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+
+      header {
+        padding: 60px 20px;
+      }
+
+      header h1 {
+        font-size: 32px;
+      }
+
+      header p {
+        font-size: 17px;
+      }
+
+      h2 {
+        font-size: 26px;
+      }
+
+      .card {
+        padding: 22px;
+      }
     }
   </style>
 </head>
+
 <body>
 
-<header>
-  <h1>Fonoaudiología Pediátrica</h1>
-  <p>Evaluaciones accesibles para niños y jóvenes menores de 15 años</p>
-</header>
-
-<section>
-  <div class="card">
-
-    <h2>Atención Profesional</h2>
+  <header>
+    <h1>Fonoaudiología Pediátrica</h1>
 
     <p>
-      Evaluaciones y orientación fonoaudiológica enfocada en
-      el desarrollo infantil y juvenil.
+      Evaluaciones fonoaudiológicas accesibles para niños y jóvenes menores de 15 años.
     </p>
 
-    <p>
-      Cupos disponibles a bajo costo.
-    </p>
-
-    <a class="btn" href="#">
-      Solicitar Información
+    <a href="#contacto" class="btn">
+      Solicitar evaluación
     </a>
+  </header>
 
-  </div>
-</section>
+  <section>
 
-<footer>
-  © 2026 Fonoaudiología Pediátrica
-</footer>
+    <h2>Apoyo profesional para el desarrollo comunicativo</h2>
+
+    <p class="intro">
+      Ofrecemos orientación y evaluación fonoaudiológica para identificar necesidades en el habla,
+      lenguaje, comunicación y desarrollo infantil, entregando una atención cercana,
+      clara y accesible para las familias.
+    </p>
+
+  </section>
+
+  <section>
+
+    <h2>Servicios</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Evaluación de lenguaje</h3>
+
+        <p>
+          Revisión del desarrollo comprensivo y expresivo del niño o joven.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Evaluación del habla</h3>
+
+        <p>
+          Identificación de dificultades en pronunciación, articulación y claridad al hablar.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Orientación familiar</h3>
+
+        <p>
+          Entrega de recomendaciones prácticas para apoyar el desarrollo desde el hogar.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Derivación oportuna</h3>
+
+        <p>
+          Apoyo para determinar si se requiere tratamiento, seguimiento o evaluación complementaria.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section>
+
+    <div class="highlight">
+
+      <h2>¿Para quién está dirigido?</h2>
+
+      <p>
+        Para niños y jóvenes menores de 15 años que presenten dificultades en el lenguaje,
+        pronunciación, comunicación, comprensión, expresión oral o que requieran una primera evaluación
+        fonoaudiológica.
+      </p>
+
+    </div>
+
+  </section>
+
+  <section>
+
+    <h2>¿Cómo funciona?</h2>
+
+    <div class="steps">
+
+      <div class="step">
+        <strong>1. Solicitud de información:</strong>
+        La familia se comunica para consultar disponibilidad.
+      </div>
+
+      <div class="step">
+        <strong>2. Coordinación de evaluación:</strong>
+        Se agenda una hora según disponibilidad.
+      </div>
+
+      <div class="step">
+        <strong>3. Evaluación profesional:</strong>
+        Se realiza la revisión fonoaudiológica correspondiente.
+      </div>
+
+      <div class="step">
+        <strong>4. Orientación final:</strong>
+        Se entregan recomendaciones y próximos pasos sugeridos.
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="contacto">
+
+    <div class="contact">
+
+      <h2>Agenda o solicita más información</h2>
+
+      <p>
+        Contáctanos para conocer disponibilidad, valores y cupos vigentes.
+      </p>
+
+      <a
+        class="whatsapp"
+        href="https://wa.me/56954221399"
+        target="_blank"
+      >
+        Escribir por WhatsApp
+      </a>
+
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 Fonoaudiología Pediátrica | Atención para niños y jóvenes
+  </footer>
 
 </body>
 </html>
