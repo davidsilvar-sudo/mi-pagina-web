@@ -1,248 +1,293 @@
+Reemplaza TODO el contenido de tu `index.html` por este código completo:
+
+```html
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fonoaudiología Pediátrica</title>
+
+  <title>Espacio Diversamente</title>
 
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
     }
 
-    body {
-      font-family: Arial, sans-serif;
-      color: #1f2937;
-      background: #f8fafc;
-      line-height: 1.6;
+    body{
+      font-family:Arial, sans-serif;
+      background:#f8f6f1;
+      color:#1f2937;
+      line-height:1.6;
     }
 
-    header {
-      background: linear-gradient(135deg, #2e8b57, #3fbf7f);
-      color: white;
-      padding: 70px 20px;
-      text-align: center;
+    header{
+      background:linear-gradient(135deg,#16a34a,#22c55e);
+      color:white;
+      text-align:center;
+      padding:60px 20px;
     }
 
-    header h1 {
-      font-size: 42px;
-      margin-bottom: 15px;
+    .logo{
+      width:220px;
+      margin-bottom:20px;
+      border-radius:20px;
     }
 
-    header p {
-      font-size: 20px;
-      max-width: 700px;
-      margin: auto;
+    header h1{
+      font-size:48px;
+      margin-bottom:15px;
     }
 
-    .btn {
-      display: inline-block;
-      margin-top: 30px;
-      background: white;
-      color: #2e8b57;
-      padding: 15px 28px;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
+    header p{
+      max-width:700px;
+      margin:auto;
+      font-size:20px;
     }
 
-    .btn:hover {
-      transform: scale(1.05);
+    .btn{
+      display:inline-block;
+      margin-top:30px;
+      background:white;
+      color:#16a34a;
+      padding:15px 28px;
+      border-radius:12px;
+      text-decoration:none;
+      font-weight:bold;
+      transition:0.3s;
     }
 
-    section {
-      padding: 60px 20px;
-      max-width: 1100px;
-      margin: auto;
+    .btn:hover{
+      transform:scale(1.05);
     }
 
-    h2 {
-      text-align: center;
-      font-size: 32px;
-      margin-bottom: 30px;
-      color: #14532d;
+    section{
+      max-width:1200px;
+      margin:auto;
+      padding:70px 20px;
     }
 
-    .intro {
-      text-align: center;
-      max-width: 800px;
-      margin: auto;
-      font-size: 18px;
+    h2{
+      text-align:center;
+      font-size:36px;
+      margin-bottom:40px;
+      color:#166534;
     }
 
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 25px;
-      margin-top: 35px;
+    .banner{
+      width:100%;
+      border-radius:25px;
+      box-shadow:0 4px 20px rgba(0,0,0,0.15);
     }
 
-    .card {
-      background: white;
-      padding: 28px;
-      border-radius: 16px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
-      text-align: center;
-      transition: 0.3s;
+    .services{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+      margin-top:40px;
     }
 
-    .card:hover {
-      transform: translateY(-5px);
+    .card{
+      background:white;
+      padding:25px;
+      border-radius:18px;
+      box-shadow:0 4px 15px rgba(0,0,0,0.08);
+      text-align:center;
+      transition:0.3s;
     }
 
-    .card h3 {
-      margin-bottom: 12px;
-      color: #166534;
+    .card:hover{
+      transform:translateY(-5px);
     }
 
-    .highlight {
-      background: #dcfce7;
-      border-radius: 18px;
-      padding: 40px;
-      text-align: center;
+    .card img{
+      width:100%;
+      border-radius:14px;
+      margin-bottom:15px;
     }
 
-    .steps {
-      max-width: 800px;
-      margin: auto;
+    .professional{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:40px;
+      align-items:center;
     }
 
-    .step {
-      background: white;
-      padding: 22px;
-      border-left: 6px solid #2e8b57;
-      margin-bottom: 18px;
-      border-radius: 10px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    .professional img{
+      width:100%;
+      border-radius:25px;
+      box-shadow:0 4px 20px rgba(0,0,0,0.15);
     }
 
-    .contact {
-      background: #14532d;
-      color: white;
-      text-align: center;
-      border-radius: 20px;
-      padding: 50px 20px;
+    .professional-text{
+      background:white;
+      padding:35px;
+      border-radius:20px;
+      box-shadow:0 4px 20px rgba(0,0,0,0.08);
     }
 
-    .contact h2 {
-      color: white;
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:25px;
     }
 
-    .whatsapp {
-      background: #25D366;
-      color: white;
-      padding: 16px 30px;
-      border-radius: 10px;
-      display: inline-block;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 25px;
-      transition: 0.3s;
+    .gallery img{
+      width:100%;
+      border-radius:20px;
+      box-shadow:0 4px 20px rgba(0,0,0,0.12);
     }
 
-    .whatsapp:hover {
-      transform: scale(1.05);
-      background: #1ebe5d;
+    .contact{
+      background:#166534;
+      color:white;
+      text-align:center;
+      padding:60px 20px;
+      border-radius:25px;
     }
 
-    footer {
-      text-align: center;
-      padding: 25px;
-      background: #111827;
-      color: white;
-      margin-top: 40px;
+    .contact h2{
+      color:white;
     }
 
-    @media (max-width: 600px) {
+    .contact p{
+      margin-bottom:15px;
+      font-size:18px;
+    }
 
-      header {
-        padding: 60px 20px;
+    .whatsapp{
+      display:inline-block;
+      margin-top:20px;
+      background:#25D366;
+      color:white;
+      padding:18px 32px;
+      border-radius:14px;
+      text-decoration:none;
+      font-weight:bold;
+      font-size:18px;
+      transition:0.3s;
+    }
+
+    .whatsapp:hover{
+      transform:scale(1.05);
+    }
+
+    footer{
+      background:#111827;
+      color:white;
+      text-align:center;
+      padding:25px;
+      margin-top:50px;
+    }
+
+    @media(max-width:900px){
+
+      .professional{
+        grid-template-columns:1fr;
       }
 
-      header h1 {
-        font-size: 32px;
+      header h1{
+        font-size:38px;
       }
 
-      header p {
-        font-size: 17px;
-      }
-
-      h2 {
-        font-size: 26px;
-      }
-
-      .card {
-        padding: 22px;
-      }
     }
+
   </style>
 </head>
 
 <body>
 
   <header>
-    <h1>Fonoaudiología Pediátrica</h1>
+
+    <img
+      src="img/logo.jpeg"
+      alt="Logo Espacio Diversamente"
+      class="logo"
+    >
+
+    <h1>Espacio Diversamente</h1>
 
     <p>
-      Evaluaciones fonoaudiológicas accesibles para niños y jóvenes menores de 15 años.
+      Atención infantojuvenil interdisciplinaria en fonoaudiología,
+      terapia ocupacional y psicología.
     </p>
 
-    <a href="#contacto" class="btn">
-      Solicitar evaluación
+    <a
+      href="https://wa.me/56954221399"
+      target="_blank"
+      class="btn"
+    >
+      Agenda una evaluación
     </a>
+
   </header>
 
   <section>
 
-    <h2>Apoyo profesional para el desarrollo comunicativo</h2>
-
-    <p class="intro">
-      Ofrecemos orientación y evaluación fonoaudiológica para identificar necesidades en el habla,
-      lenguaje, comunicación y desarrollo infantil, entregando una atención cercana,
-      clara y accesible para las familias.
-    </p>
+    <img
+      src="img/banner.jpeg"
+      alt="Banner Espacio Diversamente"
+      class="banner"
+    >
 
   </section>
 
   <section>
 
-    <h2>Servicios</h2>
+    <h2>Nuestros Servicios</h2>
 
-    <div class="cards">
+    <div class="services">
 
       <div class="card">
-        <h3>Evaluación de lenguaje</h3>
+
+        <img
+          src="img/servicios.jpeg"
+          alt="Servicios"
+        >
+
+        <h3>Atención Interdisciplinaria</h3>
 
         <p>
-          Revisión del desarrollo comprensivo y expresivo del niño o joven.
+          Trabajo integral orientado al desarrollo comunicativo,
+          emocional y ocupacional.
         </p>
+
       </div>
 
       <div class="card">
-        <h3>Evaluación del habla</h3>
+
+        <img
+          src="img/consulta-1.jpeg"
+          alt="Sala terapéutica"
+        >
+
+        <h3>Espacios Terapéuticos</h3>
 
         <p>
-          Identificación de dificultades en pronunciación, articulación y claridad al hablar.
+          Ambiente seguro, acogedor y adaptado para niños,
+          niñas y adolescentes.
         </p>
+
       </div>
 
       <div class="card">
-        <h3>Orientación familiar</h3>
+
+        <img
+          src="img/consulta-2.jpeg"
+          alt="Consulta terapéutica"
+        >
+
+        <h3>Atención Personalizada</h3>
 
         <p>
-          Entrega de recomendaciones prácticas para apoyar el desarrollo desde el hogar.
+          Evaluaciones y orientación adaptadas a las necesidades
+          individuales de cada familia.
         </p>
-      </div>
 
-      <div class="card">
-        <h3>Derivación oportuna</h3>
-
-        <p>
-          Apoyo para determinar si se requiere tratamiento, seguimiento o evaluación complementaria.
-        </p>
       </div>
 
     </div>
@@ -251,15 +296,48 @@
 
   <section>
 
-    <div class="highlight">
+    <h2>Profesional</h2>
 
-      <h2>¿Para quién está dirigido?</h2>
+    <div class="professional">
 
-      <p>
-        Para niños y jóvenes menores de 15 años que presenten dificultades en el lenguaje,
-        pronunciación, comunicación, comprensión, expresión oral o que requieran una primera evaluación
-        fonoaudiológica.
-      </p>
+      <img
+        src="img/profesional.jpeg"
+        alt="Fonoaudióloga"
+      >
+
+      <div class="professional-text">
+
+        <h3 style="font-size:32px;margin-bottom:20px;">
+          Constanza Silva Rodríguez
+        </h3>
+
+        <p>
+          Fonoaudióloga con experiencia en:
+        </p>
+
+        <br>
+
+        <ul style="padding-left:20px;">
+
+          <li>Estimulación temprana</li>
+          <li>Trastornos del lenguaje</li>
+          <li>Trastornos de los sonidos del habla</li>
+          <li>Necesidades educativas</li>
+          <li>Comunicación y habilidades sociales</li>
+
+        </ul>
+
+        <br>
+
+        <a
+          href="https://wa.me/56954221399"
+          target="_blank"
+          class="whatsapp"
+        >
+          Agendar atención
+        </a>
+
+      </div>
 
     </div>
 
@@ -267,50 +345,52 @@
 
   <section>
 
-    <h2>¿Cómo funciona?</h2>
+    <h2>Nuestro Espacio</h2>
 
-    <div class="steps">
+    <div class="gallery">
 
-      <div class="step">
-        <strong>1. Solicitud de información:</strong>
-        La familia se comunica para consultar disponibilidad.
-      </div>
+      <img
+        src="img/consulta-1.jpeg"
+        alt="Consulta infantil"
+      >
 
-      <div class="step">
-        <strong>2. Coordinación de evaluación:</strong>
-        Se agenda una hora según disponibilidad.
-      </div>
-
-      <div class="step">
-        <strong>3. Evaluación profesional:</strong>
-        Se realiza la revisión fonoaudiológica correspondiente.
-      </div>
-
-      <div class="step">
-        <strong>4. Orientación final:</strong>
-        Se entregan recomendaciones y próximos pasos sugeridos.
-      </div>
+      <img
+        src="img/consulta-2.jpeg"
+        alt="Consulta terapéutica"
+      >
 
     </div>
 
   </section>
 
-  <section id="contacto">
+  <section>
 
     <div class="contact">
 
-      <h2>Agenda o solicita más información</h2>
+      <h2>Contáctanos</h2>
 
       <p>
-        Contáctanos para conocer disponibilidad, valores y cupos vigentes.
+        📍 Miraflores 249 · Santiago Centro
+      </p>
+
+      <p>
+        🚇 Cercano a Metro Bellas Artes
+      </p>
+
+      <p>
+        📸 Instagram: @espacio_diversamente
+      </p>
+
+      <p>
+        📱 WhatsApp: +56 9 5422 1399
       </p>
 
       <a
-        class="whatsapp"
         href="https://wa.me/56954221399"
         target="_blank"
+        class="whatsapp"
       >
-        Escribir por WhatsApp
+        Hablar por WhatsApp
       </a>
 
     </div>
@@ -318,8 +398,11 @@
   </section>
 
   <footer>
-    © 2026 Fonoaudiología Pediátrica | Atención para niños y jóvenes
+
+    © 2026 Espacio Diversamente · Consulta Terapéutica Integral
+
   </footer>
 
 </body>
 </html>
+```
