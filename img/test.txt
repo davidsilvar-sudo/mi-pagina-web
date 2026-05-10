@@ -1,2 +1,0 @@
-<img src="img/logo.jpg" alt="Logo Espacio Diversamente">
-<img src="img/consulta-1.jpg" alt="Sala de atención infantil">
