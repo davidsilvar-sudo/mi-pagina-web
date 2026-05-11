@@ -1,0 +1,15 @@
+{
+  "name": "mi-pagina-web",
+  "version": "1.0.0",
+  "description": "Espacio Diversamente - Consulta terapéutica integral",
+  "private": true,
+  "scripts": {
+    "build": "echo 'Static HTML site - no build required'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/speed-insights": "^1.0.12"
+  }
+}
